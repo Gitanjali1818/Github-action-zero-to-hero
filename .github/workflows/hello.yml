@@ -17,3 +17,10 @@ jobs:
       - name: say hello to username
         run: echo "hello ${{  github.actor }}"
 
+  details:
+    runs-on: ubuntu-latest
+    steps:
+     - name: show version of python and docker
+     - run: docker --version
+            python --version    
+
