@@ -4,7 +4,7 @@ name: cicd
 #manual click for continuous delivery
 on:
   workflow_dispatch:
-    jobs:
+jobs:
       code:
         runs-on: ubuntu-latest
         steps:
