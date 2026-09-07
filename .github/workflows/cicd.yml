@@ -1,7 +1,6 @@
-#this is the name of workflow.
 name: cicd
 
-#manual click for continuous delivery
+# manual click for continuous delivery
 on:
   workflow_dispatch:
 
@@ -13,20 +12,22 @@ jobs:
       - name: checkout code
         run: echo "code clone from github"
 
-   build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: build docker container
         run: echo "docker container build"
 
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - name: test the container
-          run: echo "testing the container"
-      
-     deploy:
-       runs-on: ubuntu-latest
-       steps: 
-        - name: deploying the container
-          run: echo "deploy the container app"  
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the container
+        run: echo "testing the container"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploying the container
+        run: echo "deploy the container app"
+
+
