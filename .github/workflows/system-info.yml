@@ -8,33 +8,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: show os
-      run: uname -a
+      - name: show os
+        run: uname -a
 
-      -name: show current directory
-      run: pwd
+      - name: show current directory
+        run: pwd
 
-      -name: list files
-      run: ls -la
+      - name: list files
+        run: ls -la
 
-      -name: show disk space
-      run: df -h
+      - name: show disk space
+        run: df -h
 
-      -name: show system details
-      run: |
-        echo "Hostname:"
-        hostname
+      - name: show system details
+        run: |
+         echo "Hostname:"
+         hostname
 
-        echo "kernal:"
-        uname -r
+         echo "kernal:"
+         uname -r
 
-        echo "Architecture:"
-        uname -m
+         echo "Architecture:"
+         uname -m
 
-      -name: show CPU information
-      run: |
-        echo "CPU cores:"
-        nproc
+      - name: show CPU information
+        run: |
+         echo "CPU cores:"
+         nproc
         
-        echo "CPU model:"
-        lscpu | grep "model name"
+         echo "CPU model:"
+         lscpu | grep "model name"
