@@ -36,5 +36,5 @@ jobs:
          echo "CPU cores:"
          nproc
         
-         echo "CPU model:"
-         lscpu | grep "model name"
+         echo "CPU Model:"
+         lscpu | grep "Model name"
