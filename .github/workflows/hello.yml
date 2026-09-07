@@ -1,10 +1,8 @@
----
+
 name: hello workflow
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   greet:
@@ -15,19 +13,20 @@ jobs:
         run: echo "hello-doston"
 
       - name: say hello to username
-        run: echo "hello ${{  github.actor }}"
+        run: echo "hello ${{ github.actor }}"
 
   details:
     runs-on: ubuntu-latest
-    
-    steps:
-     - name: show version of python and docker
-       run: | 
-          docker --version
-          python --version 
 
-       - name: show the disk space
-         run: |
-         echo "disk usage"
-         df -h   
+    steps:
+      - name: show version of python and docker
+        run: |
+          docker --version
+          python --version
+
+      - name: show the disk space
+        run: |
+          echo "disk usage"
+          df -h
+
 
