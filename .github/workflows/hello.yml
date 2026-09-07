@@ -24,5 +24,10 @@ jobs:
      - name: show version of python and docker
        run: | 
           docker --version
-          python --version    
+          python --version 
+
+       - name: show the disk space
+         run: |
+         echo "disk usage"
+         df -h   
 
