@@ -7,21 +7,21 @@ jobs:
   pr-info:
     runs-on: ubuntu_latest
 
-  steps:
-    - name: Show Pr number
-      run: echo "PR number = ${{ github.event.pull_request.number }}"
+    steps:
+      - name: Show Pr number
+        run: echo "PR number = ${{ github.event.pull_request.number }}"
 
-    - name: Show PR title
-      run: echo "PR Title = ${{ github.event.pull_request.title }}"
+      - name: Show PR title
+        run: echo "PR Title = ${{ github.event.pull_request.title }}"
 
-    - name: Show PR author
-      run: echo "PR Author = ${{github.event.pull_request.user.login }}"
+      - name: Show PR author
+        run: echo "PR Author = ${{github.event.pull_request.user.login }}"
 
-    - name: Show Source Branch
-      run: echo "Source Branch = ${{ github.head_ref }}"
+      - name: Show Source Branch
+        run: echo "Source Branch = ${{ github.head_ref }}"
 
-    - name: Show Target Branch
-      run: echo "Target Branch = ${{ github.base_ref }}" 
+      - name: Show Target Branch
+        run: echo "Target Branch = ${{ github.base_ref }}" 
 
-    - name: Show repository
-      run: echo "Repository = ${{ github.repository }}" 
+      - name: Show repository
+        run: echo "Repository = ${{ github.repository }}" 
