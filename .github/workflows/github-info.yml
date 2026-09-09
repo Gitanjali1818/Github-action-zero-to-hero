@@ -9,13 +9,13 @@ jobs:
 
     steps:
       - name: Show Repository
-        run: echo "Repository: ${{ github.repository }}"
+        run: echo "Repository=${{ github.repository }}"
 
       - name: Show Branch
-        run: echo "Branch: ${{ github.ref_name }}"
+        run: echo "Branch=${{ github.ref_name }}"
 
       - name: Show User
-        run: echo "User: ${{ github.actor }}"
+        run: echo "User=${{ github.actor }}"
 
       - name: Show Event
-        run: echo "Event: ${{ github.event_name }}"
+        run: echo "Event=${{ github.event_name }}"
