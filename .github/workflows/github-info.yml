@@ -1,0 +1,21 @@
+name: GitHub Information
+
+on:
+  workflow_dispatch:
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Repository
+        run: echo "Repository: ${{ github.repository }}"
+
+      - name: show Branch
+        run: echo "Branch: ${{ github.ref_name }}"
+
+      - name: show User
+        run: echo "User: ${{ github.actor }}"
+
+      - name: Show Event
+        run: echo "Event: ${{ github.event_name }}"
