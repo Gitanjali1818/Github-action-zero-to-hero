@@ -11,11 +11,10 @@ jobs:
       - name: Show Repository
         run: echo "Repository: ${{ github.repository }}"
 
-
-      - name: show Branch
+      - name: Show Branch
         run: echo "Branch: ${{ github.ref_name }}"
 
-      - name: show User
+      - name: Show User
         run: echo "User: ${{ github.actor }}"
 
       - name: Show Event
