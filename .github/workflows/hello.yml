@@ -2,6 +2,9 @@
 name: hello workflow
 
 on:
+  push:
+    paths: 
+    - '**.html'
   workflow_dispatch:
 
 jobs:
