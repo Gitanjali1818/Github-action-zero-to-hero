@@ -11,14 +11,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    enviornment:
+    environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       # get a access to your portfolio code via pre-build action
       - name: checkout code
-        uses: actions/checkoutv@4
+        uses: actions/checkout@v4
 
       # setup github pages
       - name: upload setup pages
