@@ -1,1 +1,586 @@
-<h1>Hello, this is my Portfolio</h1>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Gitanjali | DevOps Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #f4f7fb;
+        color: #222;
+    }
+
+    header {
+        background: #172554;
+        color: white;
+        padding: 20px 8%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav h2 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        padding: 70px 8%;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #dbeafe;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 15px;
+        color: #172554;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 18px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 25px;
+        background: #172554;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 32px;
+        color: #172554;
+    }
+
+    .about {
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .skills-container,
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+        margin-bottom: 12px;
+        color: #172554;
+    }
+
+    .card ul {
+        padding-left: 20px;
+    }
+
+    .learning {
+        background: #e0f2fe;
+    }
+
+    .journey {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .journey-item {
+        background: white;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-left: 5px solid #172554;
+        border-radius: 6px;
+    }
+
+    .contact {
+        text-align: center;
+        background: #172554;
+        color: white;
+    }
+
+    .contact a {
+        color: white;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #0f172a;
+        color: white;
+    }
+
+    @media (max-width: 700px) {
+        nav {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Gitanjali | DevOps</h2>
+
+```
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#learning">Learning</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+```
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+    <div>
+        <h1>Hello, I'm Gitanjali 👋</h1>
+
+```
+    <h2>DevOps & Automation Enthusiast</h2>
+
+    <p>
+        Welcome to my portfolio. This website represents my DevOps learning
+        journey, hands-on practice, projects, automation work and continuous
+        learning in modern DevOps technologies.
+    </p>
+
+    <a href="#projects" class="btn">View My Projects</a>
+</div>
+```
+
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+```
+<div class="about">
+    <p>
+        I am building my skills in DevOps, automation and cloud technologies
+        through hands-on practice and real-world projects.
+    </p>
+
+    <br>
+
+    <p>
+        My learning journey includes Linux administration, Shell Scripting,
+        Git and GitHub, GitHub Actions, CI/CD, Docker, AWS EC2 and
+        container-based application deployment.
+    </p>
+
+    <br>
+
+    <p>
+        I believe in learning by doing. I regularly practice DevOps concepts,
+        create projects, troubleshoot errors and document my learning.
+    </p>
+</div>
+```
+
+</section>
+
+<!-- SKILLS SECTION -->
+
+<section id="skills">
+    <h2 class="section-title">DevOps Skills & Tools</h2>
+
+```
+<div class="skills-container">
+
+    <div class="card">
+        <h3>🐧 Linux</h3>
+        <ul>
+            <li>Linux File System</li>
+            <li>Users & Groups</li>
+            <li>Permissions</li>
+            <li>Processes</li>
+            <li>LVM</li>
+            <li>Log Management</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>💻 Shell Scripting</h3>
+        <ul>
+            <li>Bash Scripting</li>
+            <li>Variables</li>
+            <li>Conditions</li>
+            <li>Loops</li>
+            <li>Functions</li>
+            <li>Arguments</li>
+            <li>Log Analysis</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🔀 Git & GitHub</h3>
+        <ul>
+            <li>Git Commands</li>
+            <li>Branches</li>
+            <li>Merge</li>
+            <li>Rebase</li>
+            <li>Stash</li>
+            <li>Cherry-pick</li>
+            <li>Reset & Revert</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>⚙️ GitHub Actions</h3>
+        <ul>
+            <li>Workflows</li>
+            <li>Jobs & Steps</li>
+            <li>Workflow Dispatch</li>
+            <li>CI/CD Practice</li>
+            <li>GitHub Variables</li>
+            <li>Automation</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🐳 Docker</h3>
+        <ul>
+            <li>Docker Images</li>
+            <li>Containers</li>
+            <li>Dockerfile</li>
+            <li>Docker Compose</li>
+            <li>Multi-stage Builds</li>
+            <li>Containerized Applications</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>☁️ AWS</h3>
+        <ul>
+            <li>EC2</li>
+            <li>Ubuntu Servers</li>
+            <li>SSH</li>
+            <li>Server Administration</li>
+            <li>Application Deployment</li>
+        </ul>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- PROJECTS SECTION -->
+
+<section id="projects">
+    <h2 class="section-title">My DevOps Projects</h2>
+
+```
+<div class="projects-container">
+
+    <div class="card">
+        <h3>🚀 Docker Nginx Demo</h3>
+
+        <p>
+            A Docker-based Nginx project where I created a Docker image,
+            configured an Nginx container and exposed the application
+            through a port.
+        </p>
+
+        <p>
+            <strong>Tools:</strong> Docker, Nginx, Linux, GitHub
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>🐍 Flask Application</h3>
+
+        <p>
+            Practiced containerizing a Flask application using Docker
+            and worked with multi-stage Docker builds.
+        </p>
+
+        <p>
+            <strong>Tools:</strong> Flask, Docker, Dockerfile, AWS
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>🏦 AI BankApp DevOps</h3>
+
+        <p>
+            Practiced running a multi-container application using
+            Docker Compose and worked with application services and
+            database containers.
+        </p>
+
+        <p>
+            <strong>Tools:</strong> Docker Compose, MySQL, Linux
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>⚙️ GitHub Actions Practice</h3>
+
+        <p>
+            Created GitHub Actions workflows to understand automated
+            execution, jobs, steps, repository information and
+            CI/CD concepts.
+        </p>
+
+        <p>
+            <strong>Tools:</strong> GitHub Actions, YAML, GitHub
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- LEARNING JOURNEY -->
+
+<section id="learning" class="learning">
+
+```
+<h2 class="section-title">My Learning Journey</h2>
+
+<div class="journey">
+
+    <div class="journey-item">
+        <h3>🐧 Linux & Shell Scripting</h3>
+        <p>
+            Practicing Linux commands, filesystem management, permissions,
+            users and groups, LVM, log analysis, log rotation and Bash
+            scripting.
+        </p>
+    </div>
+
+
+    <div class="journey-item">
+        <h3>🔀 Git & GitHub</h3>
+        <p>
+            Practicing repositories, branches, commits, merge, rebase,
+            stash, cherry-pick, reset, revert and GitHub collaboration.
+        </p>
+    </div>
+
+
+    <div class="journey-item">
+        <h3>⚙️ CI/CD & GitHub Actions</h3>
+        <p>
+            Learning how workflows, jobs, steps and triggers work and
+            practicing automation using GitHub Actions.
+        </p>
+    </div>
+
+
+    <div class="journey-item">
+        <h3>🐳 Docker</h3>
+        <p>
+            Learning how to build images, create containers, write
+            Dockerfiles, use Docker Compose and containerize applications.
+        </p>
+    </div>
+
+
+    <div class="journey-item">
+        <h3>☁️ AWS & Cloud</h3>
+        <p>
+            Practicing DevOps tasks on AWS EC2 Ubuntu servers, including
+            SSH access, Linux administration and application deployment.
+        </p>
+    </div>
+
+
+    <div class="journey-item">
+        <h3>📚 90 Days of DevOps</h3>
+        <p>
+            Following the Train With Shubham 90 Days of DevOps challenge
+            and documenting hands-on learning and daily practice.
+        </p>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- WHAT I AM LEARNING -->
+
+<section>
+    <h2 class="section-title">Currently Learning</h2>
+
+```
+<div class="about">
+
+    <p>
+        My current focus is on strengthening practical DevOps skills and
+        understanding how different tools work together in a real
+        CI/CD environment.
+    </p>
+
+    <br>
+
+    <p>
+        I am continuously practicing Linux, Git, GitHub Actions, Docker,
+        AWS, Shell Scripting and automation while building hands-on
+        projects.
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- GITHUB -->
+
+<section>
+    <h2 class="section-title">My GitHub Work</h2>
+
+```
+<div class="about">
+
+    <p>
+        I use GitHub to maintain my DevOps learning projects, practice
+        repositories, automation workflows and documentation.
+    </p>
+
+    <a
+        href="https://github.com/Gitanjali1818"
+        target="_blank"
+        class="btn">
+        Visit My GitHub
+    </a>
+
+</div>
+```
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+```
+<h2 class="section-title" style="color:white;">
+    Let's Connect
+</h2>
+
+<p>
+    Thank you for visiting my DevOps portfolio.
+</p>
+
+<p>
+    You can explore my projects and learning journey on GitHub.
+</p>
+
+<br>
+
+<a
+    href="https://github.com/Gitanjali1818"
+    target="_blank">
+    GitHub Profile
+</a>
+```
+
+</section>
+
+<footer>
+
+```
+<p>
+    © 2026 Gitanjali | DevOps Learning Portfolio
+</p>
+
+<p>
+    Built with HTML & CSS
+</p>
+```
+
+</footer>
+
+</body>
+</html>
+
