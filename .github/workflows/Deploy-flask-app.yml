@@ -6,7 +6,8 @@ on:
 jobs:
   deploy:
     env: 
-       DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
+       DOCKERHUB_USER: ${{ vars.DOCKERHUB_USERNAME }}
+       DOCKER_TAG: latest
 
     runs-on: self-hosted
 
@@ -19,5 +20,5 @@ jobs:
            echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ vars.DOCKERHUB_USERNAME }}" --password-stdin  
 
        - name: Deploy With Docker Compose
-         run: docker compose up -d --build
+         run: docker compose up -d 
 
