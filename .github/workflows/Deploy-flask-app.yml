@@ -7,12 +7,17 @@ jobs:
   deploy:
     env: 
        DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
-    runs-on: ubuntu-latest
 
-  steps:
-    - name: checkout code
-      uses: actions/checkout@v4
+    runs-on: self-hosted
 
-    - name: Deploy With Docker Compose
-      uses: docker compose up -d --build
+    steps:
+       - name: checkout code
+         uses: actions/checkout@v4
+
+       - name: Docker Login
+         run: |
+           echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ vars.DOCKERHUB_USERNAME }}" --password-stdin  
+
+       - name: Deploy With Docker Compose
+         run: docker compose up -d --build
 
