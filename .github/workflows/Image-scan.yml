@@ -5,6 +5,10 @@ name: Image Scanner
 
 on:
   workflow_call:
+    inputs:
+      DOCKERHUB_USERNAME:
+        required: true
+        type: string
 
 jobs:
   image-scanner:

@@ -19,6 +19,9 @@ jobs:
        - dependency-scan
        - docker-lint
      uses: ./.github/workflows/Image-scan.yml
+    
+     with:
+       dockerhub-username: ${{ vars.DOCKERHUB_USERNAME }}
      secrets: inherit
 
    deploy:
