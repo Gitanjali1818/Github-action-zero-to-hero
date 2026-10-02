@@ -3,7 +3,7 @@ name: DevSecOps-End-End-To-Pipeline
 on:
   workflow_dispatch:
 
-job:
+jobs:
    code-quality:
      uses: ./.github/workflows/Code-quality.yml
 
