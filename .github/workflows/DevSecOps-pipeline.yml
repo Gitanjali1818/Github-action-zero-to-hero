@@ -22,7 +22,7 @@ jobs:
     
      with:
        dockerhub-username: ${{ vars.DOCKERHUB_USERNAME }}
-       secrets: inherit
+     secrets: inherit
     
 
    deploy:
