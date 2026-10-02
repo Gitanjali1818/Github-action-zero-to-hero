@@ -6,13 +6,13 @@ name: Image Scanner
 on:
   workflow_call:
     inputs:
-     dockerhub-username:
+      dockerhub-username:
         required: true
         type: string
 
-     secrets:
-       DOCKERHUB_TOKEN:
-         required: true
+    secrets:
+      DOCKERHUB_TOKEN:
+        required: true
     
 
 jobs:
